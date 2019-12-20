@@ -1,0 +1,156 @@
+1.una variable es un espacio de 
+almacenamiento de memoria que le podemos dar propiedades y valores
+
+2.a este espacio se le deben dar nombres "declararla": var, let, const, class
+
+var declara una variable de scope global 
+local para la función sin importar el ámbito de bloque. 
+Permite hoisting. Permite reasignar un valor
+
+let declara una variable de scope global, local para la función o de bloque. 
+es reasignable y no permite hoisting.
+
+const declara una variable de scope global, local para la función o de bloque. 
+no es reasignable, pero es mutable. No permite hoisting.
+
+En general, let sería todo lo que se necesita dentro de un bloque, 
+función o ámbito global. const sería para variables que no van sufrir una reasignación. 
+var se puede relegar para cuando necesitemos hacer hoisting, vamos, casi nunca.
+
+Las variables tienen NOMBRE/PROPIEDAD/VALOR  Lo que define a una variable es el valor de su propiedad
+
+Dos tipos de datos en categorías PRIMITIVOS y OBJETOS
+    PRIMITIVOS : string (es una cadena de texto), number, booleon (identifica si es verdadero o falso), null (valor es nulo),
+        // undefined (el valor no esta definido), symbol (datos o valores inmutables)
+    OBJETOS  : objeto {}, array []
+
+    TAREAS INVESTIGAR SCOPE / HACER STATICPAGE Y DOS PROYECTOS  MATERIAL UI - BOOTSTRAP/ TIPOS DE DATOS (SINTESIS) / INVESTIGAR OPERADORES LOGICOS
+
+  Javascript
+  
+  Sentencia if 
+  inicio-condicion-se cumple(true)-sentencia-resultado
+
+  SINTAXIS 
+
+  if (condicion) {
+      bloque_de_sentencias_1
+  } else {
+      bloque_de_sentencias_2
+  }
+
+EXAMPLE
+
+    if (i study) {
+        i will pass the course
+    } else {
+        i will fail the course
+    }
+
+    if (2+2=4) {
+        suena campana correcto
+    } else {
+        suena campana incorrecto
+    }
+
+    CICLO FOR
+    SINTAXIS
+    for (let i=valor inicial; condicion; i++){
+        instrucciones
+    }
+    
+
+
+    EJECICIO1
+    me piden gestar sistema de conducir:
+    -si es mayoer de edad 18 puede conducir
+    -si no es mayor no puede conducir
+
+    EJERCICIO2
+    Pedir nota. si esta nota es entre 0 y 3 su nota es deficienta
+    si la nota es entre 3 y 5 es insuficienta
+    si la nota es 6 y 7 la nota esta bien
+    entre 7 y 9 es notable
+    9 y 10 es sobresaliente 
+
+    EJERCICIO3
+    Sistema preguntas. 
+    affirmativo va a carcel
+    negativo se va a su casa
+
+    EJERCICIO4
+    Escribe sistema para comprar helados
+    helado cuesta 2 pesos
+    helado + mammut = 4
+    helado + kit-kat = 5
+    helado + oreo = 7
+    helado + 0 = 2
+
+    si no existe mostrar preguntas de nuevo
+
+    EJERCICIO5 Piramide
+
+DO / While
+
+diferencia do/while y for 
+-Los ciclos for son utilizados para ciclos con numero de iteraciones definido el num de iteraciones
+
+-Mientras que los ciclos while sirven para mejorar los ciclos donde el num 
+de iteraciones puede variar dependiendo de dos factores:
+1: de los valores que se comparan de manera inicial y por la condicion pueden no ejecutarse
+2: Las operaciones se realizan dentro del mismo ciclo
+
+WHILE 
+while (condicion) {
+    sentencia
+}
+FOR
+for (let i=valor inicial; condicion; i++){
+        instrucciones
+    }
+
+Si queremos hacer que una seccion de nuestro 
+programa se repita mientras se cumpla una condicion usaremos while,
+esta orden tiene dos formatos distintos segun comprobemos la condicion al principio o al final.
+
+WHILE 
+while (condicion) {
+    sentencia
+}
+
+do { sentencia 
+ } while (condicion)
+
+ EJERCICIO
+ diferencias entre FOR/DO/While
+ -Crea un programa que escriba los numeros pares del 26 al 10 descendiendo usando while
+ -Crea un programa que escriba los numeros pares del 26 al 10 descendiendo usando do/while
+ -Crea un programa que escriba en consola los numeros del 1 al 10 usando while 
+ -Crea un prog que escriba los numeros pares del 26 al 10 descendiendo usando do/while
+
+ -Crea un programa que muestre los num del 15 al 10 descendiendo (en cada iteracion descontar 1)
+
+ SWITCH 
+ 
+ switch (expresión) {
+  case valor1:
+    //Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor1
+    [break;]
+  case valor2:
+    //Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor2
+    [break;]
+  ...
+  case valorN:
+    //Declaraciones ejecutadas cuando el resultado de expresión coincide con valorN
+    [break;]
+  default:
+    //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
+    [break;]
+}
+
+
+El switch se basa en evaluar todos los resultados que pueda tener una detraminda variable, 
+en este caso la variable es una pregunta.
+EL break indica que ya no puede evaluar mas el caso y
+cuando ya no puede hacerlo mas psa al siguiente caso. 
+cuando ya no hay mas casos evluea el default
